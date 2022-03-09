@@ -145,7 +145,7 @@ a,
   flex-flow: column;
   gap: 20px;
   justify-content: center;
-  padding: 40px;
+  padding: 10em 20em;
 
 }
 
@@ -157,4 +157,13 @@ a,
 
   display: flex;
   flex-flow: wrap;
+
+  text-align: justify;
+
+}
+
+.quote .name{
+  font-weight: bold;
+  font-size: 24px;
+  text-align: right;
 }
