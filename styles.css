@@ -22,6 +22,10 @@ li{
   flex-direction: column;
 }
 
+button{
+  font-size: 15px;
+}
+
 a,
 .intro .text {
   text-decoration: none;
@@ -42,6 +46,7 @@ a,
 
 .intro h1.text{
   font-size: 48px;
+  margin: 0;
 }
 
 .intro p.text{
@@ -52,11 +57,12 @@ a,
 
 .intro{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background-color: #1f2937;
   padding: 32px;
   height: 24em;
+  gap: 6%;
 }
 
 
@@ -70,6 +76,20 @@ a,
 
 .intro .message{
   width: 30%;
+  display: flex;
+  gap: 16px;
+  flex-flow:column;
+}
+
+.intro button{
+  background-color: #3882f6;
+  color: white;
+  width: 120px;
+  height: 35px;
+  border: none;
+  border-radius: 12px;
+
+
 }
 
 .intro .message div.text{
@@ -167,3 +187,29 @@ a,
   font-size: 24px;
   text-align: right;
 }
+
+
+.prompt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 240px;
+}
+
+.prompt *{
+  color: white;
+}
+
+.prompt div{
+  background-color: #3882f6;
+  border-radius: 24px;
+  padding: 40px;
+}
+
+.prompt button{
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 5px 20px;
+}
+
