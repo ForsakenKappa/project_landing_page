@@ -27,6 +27,7 @@ button{
 }
 
 a,
+.footer,
 .intro .text {
   text-decoration: none;
   color: #e5e7eb;
@@ -44,6 +45,14 @@ a,
 
 }
 
+.cat-photo{
+  object-fit: cover;
+  width: inherit;
+  height: inherit;
+}
+
+
+
 .intro h1.text{
   font-size: 48px;
   margin: 0;
@@ -60,9 +69,9 @@ a,
   justify-content: center;
   align-items: center;
   background-color: #1f2937;
-  padding: 32px;
+  padding: 100px 0px;
   height: 24em;
-  gap: 6%;
+  gap: 130px;
 }
 
 
@@ -100,9 +109,10 @@ a,
 .header{
   background-color: #1f2937;
   display: flex;
-  padding: 24px 48px;
+  padding: 20px;
 
   justify-content: space-around;
+
 }
 
 .header .logo{
@@ -127,20 +137,21 @@ a,
   justify-content: space-between;
   align-items: center;
   padding: 100px 50px;
-  gap: 50px;
+  gap: 100px;
 
 }
 
 .random-info h1{
   font-size: 36px;
   font-weight: bolder;
-  color: #1f2937
+  color: #1f2937;
+  margin: 0;
 }
 
 .info{
   justify-content: space-around;
-  align-items: center;
-  width: 75%;
+  align-items: start;
+  gap: 80px;
 }
 
 .info .text{
@@ -157,6 +168,15 @@ a,
   border: 5px solid #3882f6;
   width: 200px;
   height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.info .cat-fact{
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  border-radius: 24px;
 }
 
 .quote{
@@ -165,13 +185,13 @@ a,
   flex-flow: column;
   gap: 20px;
   justify-content: center;
-  padding: 10em 20em;
+  padding: 150px 400px;
 
 }
 
 .quote .text{
   font-size: 36px;
-  color: 1f2937;
+  color: #1f2937;
   font-family: "Open Sans";
   font-weight: lighter;
 
@@ -188,7 +208,6 @@ a,
   text-align: right;
 }
 
-
 .prompt{
   display: flex;
   justify-content: center;
@@ -200,10 +219,22 @@ a,
   color: white;
 }
 
-.prompt div{
+.prompt .container{
   background-color: #3882f6;
-  border-radius: 24px;
+  border-radius: 8px;
   padding: 40px;
+  display: flex;
+
+  gap: 240px;
+}
+
+.prompt .container-text{
+  flex-flow: column;
+}
+
+.prompt .container-button{
+  align-items: center;
+  display: flex;
 }
 
 .prompt button{
@@ -213,3 +244,17 @@ a,
   padding: 5px 20px;
 }
 
+.prompt h1{
+  margin: 0;
+}
+
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f2937;
+  color:#f9faf8;
+  padding: 30px;
+
+}
